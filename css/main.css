@@ -52,7 +52,7 @@ select, input, textarea {
 
 /* common */
 body{
-
+	width: 100%;
 }
 .background{
 	width: 100%;
