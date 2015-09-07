@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /* reset.css */
 html {
 	font-size:100%;
@@ -51,16 +52,19 @@ select, input, textarea {
 
 /* common */
 body{
+
+}
+.background{
 	width: 100%;
-	background-image: url('../images/home2_min.jpg');
+	background-image: url('../images/home_min.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%
 }
 .header{
-	width: 92%;
+	width: 960px;
 	overflow: hidden;
 	margin: 0% auto;
-	padding: 2% 4%;
+	/*padding: 2% 4%;*/
 	border: 1px solid white;
 }
 .logo{
@@ -79,12 +83,12 @@ body{
 	color: white;
 	display: block;
 }
-.nav{
+.desk_nav{
 	overflow: hidden;
 	float: right;
-
+	margin-top: 20px;
 }
-.nav>a{
+.desk_nav>li{
 	color:black;
 	font-size: 1.5em;
 	/*letter-spacing: 1px;*/
@@ -94,6 +98,12 @@ body{
 	padding: 2px 5px;
 	margin-left: 10px;
 	border: 1px solid black;
+}
+.desk_nav>li>*{
+	font-family: 'Montserrat', sans-serif;
+}
+#select_nav{
+	display: none;
 }
 .content{
 	clear: both;
@@ -120,4 +130,66 @@ body{
 .content>.button>a{
 	display: block;
 	color: white;
+}
+
+.banner{
+	clear: both;
+	width:960px;
+	margin: 0 auto;
+}
+.banner>p{
+	font-size: 9em;
+	letter-spacing: -2px;
+	color: white;
+	border: 1px solid white;
+}
+.banner>.button{
+	font-size: 1.5em;
+	width: 80px;
+	height: 80px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	background: black;
+	text-align: center;
+	line-height: 80px;
+	color: white;
+	margin:0 auto;
+}
+.banner>.button>a{
+	display: block;
+	color: white;
+}
+
+footer{
+	padding: 30px 50px;
+	background-color: #3E3828;
+	color : #EBF0DC;
+}
+.footer_wrap{
+	width:960px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.copyright{
+	margin-top: 10px;
+	text-align: center;
+	float:left;
+}
+.link{
+	float: right;
+}
+.link>li{
+	float: left;
+	margin-left: 15px;
+}
+.fa {
+	color : #EBF0DC;
+}
+a span.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
