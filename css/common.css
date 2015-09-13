@@ -50,22 +50,21 @@ select, input, textarea {
 	vertical-align:middle;
 }
 
-/* common */
+/* header */
 body{
 	width: 100%;
 }
-.background{
+.border{
 	width: 100%;
-	background-image: url('../images/home_min.jpg');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	height:6px;
+	background-color: #3E3828;
 }
 .header{
 	width: 960px;
 	overflow: hidden;
 	margin: 0% auto;
 	padding-top: 2%;
-	border: 1px solid white;
+	margin-bottom: 2.5%;
 }
 .logo{
 	font-size: 1.5em;
@@ -74,7 +73,7 @@ body{
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
-	background: black;
+	background: #3E3828;
 	text-align: center;
 	line-height: 80px;
 	float:left;
@@ -91,7 +90,7 @@ body{
 .desk_nav>li{
 	color:black;
 	font-size: 1.5em;
-	/*letter-spacing: 1px;*/
+	letter-spacing: -1px;
 	border-radius: 6px;
 	float:left;
 	display: block;
@@ -105,62 +104,8 @@ body{
 #select_nav{
 	display: none;
 }
-.content{
-	clear: both;
-}
-.content>p{
-	font-size: 9em;
-	letter-spacing: -2px;
-	color: white;
-	border: 1px solid white;
-}
-.content>.button{
-	font-size: 1.5em;
-	width: 80px;
-	height: 80px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
-	background: black;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	margin:0 auto;
-}
-.content>.button>a{
-	display: block;
-	color: white;
-}
 
-.banner{
-	clear: both;
-	width:960px;
-	margin: 0 auto;
-}
-.banner>p{
-	font-size: 9em;
-	letter-spacing: -2px;
-	color: white;
-	border: 1px solid white;
-}
-.banner>.button{
-	font-size: 1.5em;
-	width: 80px;
-	height: 80px;
-	-moz-border-radius: 40px;
-	-webkit-border-radius: 40px;
-	border-radius: 40px;
-	background: black;
-	text-align: center;
-	line-height: 80px;
-	color: white;
-	margin:0 auto;
-}
-.banner>.button>a{
-	display: block;
-	color: white;
-}
-
+/* footer */
 footer{
 	padding: 30px 50px;
 	background-color: #3E3828;
