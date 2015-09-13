@@ -1,0 +1,64 @@
+@charset "utf-8";
+.background{
+	width: 100%;
+	background-image: url('../images/home_min.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	padding-top: 6px;
+}
+.banner{
+	clear: both;
+	width:960px;
+	margin: 0 auto;
+}
+.banner>p{
+	font-size: 9em;
+	letter-spacing: -2px;
+	color: white;
+	border: 1px solid white;
+}
+.banner>.button{
+	font-size: 1.5em;
+	width: 80px;
+	height: 80px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	background: black;
+	text-align: center;
+	line-height: 80px;
+	color: white;
+	margin:0 auto;
+}
+.banner>.button>a{
+	display: block;
+	color: white;
+}
+
+.content{
+	clear: both;
+}
+.content>p{
+	font-size: 9em;
+	letter-spacing: -2px;
+	color: white;
+	border: 1px solid white;
+}
+.content>.button{
+	font-size: 1.5em;
+	width: 80px;
+	height: 80px;
+	-moz-border-radius: 40px;
+	-webkit-border-radius: 40px;
+	border-radius: 40px;
+	background: black;
+	text-align: center;
+	line-height: 80px;
+	color: white;
+	margin:0 auto;
+}
+.content>.button>a{
+	display: block;
+	color: white;
+}
+
