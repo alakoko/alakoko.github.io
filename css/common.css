@@ -55,6 +55,14 @@ select, input, textarea {
 body{
 	width: 100%;
 }
+a {
+	color: #f0f0f0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+}
 .border{
 	width: 100%;
 	height:6px;
@@ -97,11 +105,14 @@ body{
 	display: block;
 	padding: 2px 5px;
 	margin-left: 10px;
-	border: 1px solid black;
 }
 .desk_nav>li>*{
 	font-family: 'Montserrat', sans-serif;
 }
+.desk_nav>li:hover {
+	background: #D9D0C9;
+}
+
 #select_nav{
 	display: none;
 }
@@ -116,6 +127,7 @@ footer{
 	width:960px;
 	overflow: hidden;
 	margin: 0 auto;
+	/*border:1px solid white;*/
 }
 .copyright{
 	margin-top: 10px;

@@ -5,27 +5,35 @@
 .background{
 	background-color: #FEFFF8;
 }
-.profile_img{
-	width: 300px;
-	height: 300px;
+.profile{
+	width: 400px;
+	height: 400px;
 	margin: 0 auto;
 }
-
-.profile_img>img{
-	width: 300px;
-	height: 300px;
-	-moz-border-radius: 150px;
-	-webkit-border-radius: 150px;
-	border-radius: 150px;
+.profile>h2{
+	font-size: 2.5em;
+	color: #3E3828;
+	text-align: center;
+}
+.profile>img{
+	display: block;
+	margin:0 auto;
+	width: 250px;
+	height: 250px;
+	-moz-border-radius: 125px;
+	-webkit-border-radius: 125px;
+	border-radius: 125px;
+}
+.profile>p{
+	color: #9E9085;
+	text-align: center;
+	font-size: 1.5em;
+}
+.profile>p>i{
+	color: #3E3828;
 }
 .content{
 	clear: both;
-}
-.content>p{
-	font-size: 9em;
-	letter-spacing: -2px;
-	color: white;
-	border: 1px solid white;
 }
 
 .banner{
@@ -33,9 +41,9 @@
 	width:960px;
 	margin: 0 auto;
 }
-.banner>p{
+.banner>h1{
 	font-size: 7em;
-	letter-spacing: -2px;
+	letter-spacing: -1px;
 	color: black;
 	border: 1px solid white;
 	font-family: 'Montserrat', sans-serif;
