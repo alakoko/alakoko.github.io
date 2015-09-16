@@ -1,7 +1,7 @@
 @charset "utf-8";
 .background{
 	width: 100%;
-	background-image: url('../images/home_min.jpg');
+	background-image: url('../images/home2_m.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	padding-top: 6px;
@@ -14,8 +14,9 @@
 .banner>p{
 	font-size: 9em;
 	letter-spacing: -2px;
-	color: white;
+	color: grey;
 	border: 1px solid white;
+	height: 500px;
 }
 .banner>.button{
 	font-size: 1.5em;
