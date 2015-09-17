@@ -30,16 +30,17 @@
 	border: 1px solid white;
 }
 
-.contact_box>ul>li>*{
-	display: block;
-}
-.contact_box>ul>li>a>.fa{
+.follow_link>li{
 	background-color: #3E3827;
 	width: 50px;
 	height: 50px;
 	-moz-border-radius: 25px;
 	-webkit-border-radius: 25px;
 	border-radius: 25px;
+	float: left;
+}
+.follow_link{
+	overflow:hidden;
 }
 .contact_box>ul>li{
 	border: 1px solid white;
