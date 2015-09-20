@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+
+  </head>
+  <body>
+    <!-- 필터 버튼 모음 -->
+    <ul id="galleryFilter">
+      <li class="form-item">
+        <input type="radio" id="filterAll" name="filter" value="all" checked>
+        <label for="filterAll">All</label>
+      </li>
+      <li class="form-item">
+        <input type="radio" id="filterGirl" name="filter" value="girl">
+        <label for="filterGirl">Girl</label>
+      </li>
+      <li class="form-item">
+        <input type="radio" id="filterWoman" name="filter" value="woman">
+        <label for="filterWoman">Woman</label>
+      </li>
+      <li class="form-item">
+        <input type="radio" id="filterPeople" name="filter" value="people">
+        <label for="filterPeople">People</label>
+      </li>
+      <li class="form-item">
+        <input type="radio" id="filterScene" name="filter" value="scene">
+        <label for="filterScene">Scene</label>
+      </li>
+      <li class="form-item">
+        <input type="radio" id="filterLandscape" name="filter" value="landscape">
+        <label for="filterLandscape">Landscape</label>
+      </li>
+    </ul>
+
+    <!-- 갤러리 -->
+    <ul id="gallery"></ul>
+
+
+
+    <!-- 더보기 버튼 -->
+    <button id="loadMore">Load More</button>
+
+    <!-- 라이트박스(레이어팝업) -->
+    <div id="popupWrap">
+      <div id="popup"></div>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script src="gallery.js"></script>
+  </body>
+</html>
