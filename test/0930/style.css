@@ -1,0 +1,56 @@
+/* Phark Method */
+.button1{
+	display:block;
+	width: 49px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	border:none;
+	background:red;
+	cursor:pointer;
+	text-indent: -9999px;
+}
+/* WA IR */
+.button2{
+	display:block;
+	width: 49px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	border:none;
+	background: grey;
+	cursor:pointer;
+}
+.button2>span{
+	display: block;
+	position: relative;
+	padding: 10px;
+	z-index: -1;
+}
+
+/* Phark Method 보완*/
+.button3{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background:red;
+	text-indent:100%;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.direction_img {
+	display: block;;
+	background: url('http://power4ce.cafe24.com/images/3.jpg') no-repeat;
+	width: 800px;
+	height: 500px;
+}
+.direction_img>span{
+	display:block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	
+}
+
+
