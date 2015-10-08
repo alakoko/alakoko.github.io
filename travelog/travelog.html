@@ -36,19 +36,32 @@
 			<div class="banner"> 
 				<h1 class="subject">TRAVELOG</h1>
 			</div>
-			<div class="content"> 
-				<section>
-					<h3></h3>
-					<p></p>
-				</section>	
-				<section>
-					<h3></h3>
-					<p></p>
-				</section>	
-				<section>
-					<h3></h3>
-					<p></p>
-				</section>
+			
+			<form class="filter-form" id="gallery-filter">
+				<span class="form-item">
+					<input type="radio" name="filter" id="filter-all" value="all" checked>
+					<label for="filter-all">ALL</label>
+				</span>
+				<span class="form-item">
+					<input type="radio" name="filter" id="filter-europe" value="europe">
+					<label for="filter-europe">Europe</label>
+				</span>
+				<span class="form-item">
+					<input type="radio" name="filter" id="filter-jeju" value="jeju">
+					<label for="filter-jeju">Jeju</label>
+				</span>
+				<span class="form-item">
+					<input type="radio" name="filter" id="filter-kyungju" value="kyungju">
+					<label for="filter-kyungju">kyungju</label>
+				</span>
+				<span class="form-item">
+					<input type="radio" name="filter" id="filter-nami" value="nami">
+					<label for="filter-nami">nami</label>
+				</span>
+			</form>
+			<div class="content">
+				<ul class="gallery" id="gallery">
+				</ul>
 			</div>
 		</div>
 		<footer>
@@ -65,5 +78,9 @@
 				</ul>
 			</div>
 		</footer>
-	<script src="js/main.js" ></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+	<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/travelog.js"></script>
+	</body>
 </html>
