@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		label{
+			cursor: pointer;
+		}
+			.toggle_button{
+				display: block;
+				width: 120px;
+				height: 30px;
+				background-color: #91CDFB;
+				text-align: center;
+				line-height: 30px;
+				margin: 10px 0;
+			}
+			#toggle_button{
+				/*display: none;*/
+			}
+
+		.wrap{
+			width:220px;
+			overflow: hidden;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			margin-right: 10px;
+			margin-top: 10px;
+		}
+		.first{background-color: red;}
+		.second{background-color: yellow;}
+		.third{background-color: green;}
+		.fourth{background-color: blue;}
+
+		#box1{float:left; position: relative; }
+		#box2{float:left; position: relative; }
+		#box3{float:left; position: relative; }
+		#box4{float:left; position: relative; }
+
+
+		#toggle_button:checked+#wrap>#box1{
+			top:110px; left: 110px;
+		}
+		input[type=checkbox]:checked+#wrap>#box4{
+			top:-110px; right: 110px;
+		}
+	</style>
+</head>
+<body>
+	<label for="toggle_button" class="toggle_button">레이아웃 변경</label>
+		<input type="checkbox" id="toggle_button"/>
+
+	<div id="wrap" class="wrap">
+		<div id="box1" class="box first"></div>
+		<div id="box2" class="box second"></div>
+		<div id="box3" class="box third"></div>
+		<div id="box4" class="box fourth"></div>
+	</div>
+
+</body>
+</html>
