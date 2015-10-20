@@ -110,7 +110,12 @@ a {
 .desk_nav>li:hover {
 	background: #DDDDD6;
 }
-
+/*.desk_nav>li:clicked{
+	background: #242019;
+}
+.desk_nav>li>a:active{
+	color: #FFFFFF;
+}*/
 #select_nav{
 	display: none;
 }
