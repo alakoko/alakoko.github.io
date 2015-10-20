@@ -16,7 +16,7 @@
 	font-family: 'Montserrat', sans-serif;
 }
 .banner>p{
-	font-size: 7em;
+	font-size: 3em;
 	letter-spacing: -2px;
 	color: black;
 	font-family: 'Montserrat', sans-serif;
@@ -30,6 +30,21 @@
 }
 .contact_box{
 	float:left;
+	margin-top: 20px;
+}
+.contact_box>.mobile{
+	float:left;
+	font-size: 2em;
+	letter-spacing: -2px;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+.contact_box>.address{
+	float:left;
+	font-size: 1.5em;
+	letter-spacing: -2px;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
 }
 .contact>li>.fa{
 	color: #3D3727;
