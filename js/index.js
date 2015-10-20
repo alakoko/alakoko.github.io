@@ -1,1 +1,0 @@
-console.log('Are you ready for developing the program?');

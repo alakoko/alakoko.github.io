@@ -38,14 +38,14 @@ table {
 
 table caption {position:absolute; top:0; left:-999999px;}
 
-a:link, a:visited {
+/*a:link, a:visited {
 	color: #444547;
 	text-decoration:none;
-}
-a:hover, a:focus, a:active {
+}*/
+/*a:hover, a:focus, a:active {
 	color:#55aaea;
 	text-decoration:underline;
-}
+}*/
 
 select, input, textarea {
 	font:normal 1em '나눔고딕',nanumgothic,'돋움',dotum,AppleGothic, Arial, Verdana, sans-serif;
@@ -58,11 +58,8 @@ body{
 	width: 100%;
 }
 a {
-	color: #f0f0f0;
+	color: #444547;
 	text-decoration: none;
-}
-a:hover {
-	color: #000;
 }
 .border{
 	width: 100%;
@@ -99,7 +96,6 @@ a:hover {
 	margin-top: 20px;
 }
 .desk_nav>li{
-	color:black;
 	font-size: 1.5em;
 	letter-spacing: -1px;
 	border-radius: 5px;
@@ -114,12 +110,7 @@ a:hover {
 .desk_nav>li:hover {
 	background: #DDDDD6;
 }
-.desk_nav>li:clicked{
-	background: #242019;
-}
-.desk_nav>li>a:active{
-	color: #FFFFFF;
-}
+
 #select_nav{
 	display: none;
 }
@@ -134,7 +125,6 @@ footer{
 	width:960px;
 	overflow: hidden;
 	margin: 0 auto;
-	/*border:1px solid white;*/
 }
 .copyright{
 	margin-top: 10px;
@@ -157,4 +147,18 @@ a span.screen-reader-text {
     height: 1px;
     width: 1px;
     overflow: hidden;
+}
+
+/* current page nav */
+.current{
+	background-color: #3E3828;
+}
+.current>a{
+	color: #FEFFF8;
+}
+.current>a:hover{
+	color: #FEFFF8;
+}
+#CP:hover{
+	background-color: #3E3828;
 }
