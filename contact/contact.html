@@ -45,10 +45,10 @@
 					<div class="mobile">
 						<a href="tel:010-5034-8795">010 - 5034 - 8795</a>
 					</div>
-					<div class="address">
+					<!-- <div class="address">
 						27, Cheyukgwan-ro, Bupyeong-gu,<br> 
 						Incheon, Korea
-					</div>
+					</div> -->
 					<ul class="contact">
 						<!-- <li><i class="fa fa-phone fa-2x"></i>&nbsp;<a href="tel:010-5034-8795">010 5034 8795</a></li> -->
 						<li><i class="fa fa-comment fa-2x"></i>&nbsp;
@@ -58,22 +58,39 @@
 							<a href="mailto:alakoko.kim@gmail.com">alakoko.kim@gmail.com</a></li>
 						<li><i class="fa fa-globe fa-2x"></i>&nbsp;
 							<a href="http://www.alakoko.com">www.alakoko.com</a></li>
+						<li><i class="fa fa-map-marker fa-2x"></i>&nbsp;
+							<a href="https://goo.gl/maps/t9fqH1Z5ynC2" target="_blank">27, Cheyukgwan-ro, Bupyeong-gu, Incheon, Korea</a></li>
 					</ul>
 					<ul class="follow_link">
-						<li><a href="https://www.linkedin.com/in/alakoko"><span class="fa fa-linkedin fa-3x"></span><span class="screen-reader-text">linkedin</span></a></li>
-						<li><a href="https://github.com/alakoko"><span class="fa fa-github-alt fa-3x"></span><span class="screen-reader-text">github</span></a></li>
-						<li><a href="http://facebook.com/lovelyalakoko"><span class="fa fa-facebook fa-3x"></span><span class="screen-reader-text">facebook</span></a></li>
-						<li><a href="https://instagram.com/lovely_alakoko/"><span class="fa fa-instagram fa-3x"></span><span class="screen-reader-text">instagram</span></a></li>
-						<li><a href="http://blog.alakoko.com"><span class="fa fa-pencil-square-o fa-3x"></span><span class="screen-reader-text">blog</span></a></li>
+						<li><a href="https://www.linkedin.com/in/alakoko" target="_blank"><span class="fa fa-linkedin fa-3x"></span><span class="screen-reader-text">linkedin</span></a></li>
+						<li><a href="https://github.com/alakoko" target="_blank"><span class="fa fa-github-alt fa-3x"></span><span class="screen-reader-text">github</span></a></li>
+						<li><a href="http://facebook.com/lovelyalakoko" target="_blank"><span class="fa fa-facebook fa-3x"></span><span class="screen-reader-text">facebook</span></a></li>
+						<li><a href="https://instagram.com/alako.ko/" target="_blank"><span class="fa fa-instagram fa-3x"></span><span class="screen-reader-text">instagram</span></a></li>
+						<li><a href="http://blog.alakoko.com" target="_blank"><span class="fa fa-pencil-square-o fa-3x"></span><span class="screen-reader-text">blog</span></a></li>
 					</ul>
 				</div>
-				<form action="MAILTO:alakoko.kim@gmail.com" method="post" enctype="text/plain">
-					<input type="text" name="name" value="your name"><br>
-					<input type="text" name="mail" value="your email"><br>
-					<input type="text" name="subject" value="subject"><br>
-					<input type="text" name="comment" value="your comment" size="50"><br><br>
-					<input type="submit" value="Send">
-					<input type="reset" value="Reset">
+				<form action="email_form.jsp" method="post" id="email">
+						<label for="name">NAME</label>
+						<input type="text" name="name" id="name" value="Name"><br>
+					
+						<label for="mail">EMAIL</label>
+						<input type="text" name="mail" id="email" value="name@email.com"><br>
+					
+						<label for="subject">SUBJECT</label>
+						<input type="text" name="subject" id="subject" value="Subject"><br>
+					
+						<label for="message">MESSAGE</label>
+						<textarea name="message" id="message">
+							Leave a Message :)
+						</textarea>
+						<br><br>
+					
+					<!-- <input type="submit" value="Send"> -->
+					<button type="submit" form="email" value="Send">
+						<i class="fa fa-paper-plane-o"></i>SEND MESSAGE</button>
+					<!-- <input type="reset" value="Reset"> -->
+					<button type="reset" value="Reset">
+						<i class="fa fa-repeat"></i>RESET</button>
 				</form>
 			</div>
 		</div>
@@ -83,10 +100,10 @@
 					© 2015 alakoko, JIHYE KIM. All rights reserved.
 				</p>
 				<ul class="link">
-					<li><a href="https://www.linkedin.com/in/alakoko"><span class="fa fa-linkedin fa-2x"></span><span class="screen-reader-text">linkedin</span></a></li>
-					<li><a href="https://github.com/alakoko"><span class="fa fa-github fa-2x"></span><span class="screen-reader-text">github</span></a></li>
-					<li><a href="http://facebook.com/lovelyalakoko"><span class="fa fa-facebook fa-2x"></span><span class="screen-reader-text">facebook</span></a></li>
-					<li><a href="https://instagram.com/lovely_alakoko/"><span class="fa fa-instagram fa-2x"></span><span class="screen-reader-text">instagram</span></a></li>
+					<li><a href="https://www.linkedin.com/in/alakoko" target="_blank"><span class="fa fa-linkedin fa-2x"></span><span class="screen-reader-text">linkedin</span></a></li>
+					<li><a href="https://github.com/alakoko" target="_blank"><span class="fa fa-github fa-2x"></span><span class="screen-reader-text">github</span></a></li>
+					<li><a href="http://facebook.com/lovelyalakoko" target="_blank"><span class="fa fa-facebook fa-2x"></span><span class="screen-reader-text">facebook</span></a></li>
+					<li><a href="https://instagram.com/alako.ko/" target="_blank"><span class="fa fa-instagram fa-2x"></span><span class="screen-reader-text">instagram</span></a></li>
 					<!-- <li><a href="http://blog.alakoko.com"><span class="fa fa-pencil-square-o fa-2x"></span><span class="screen-reader-text">blog</span></a></li> -->
 				</ul>
 			</div>
