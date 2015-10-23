@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 /* common */
-.background{
-	background-color: #FEFFF8;
-}
 .banner{
 	clear: both;
 	width:960px;

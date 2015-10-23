@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 /* common */
-.background{
-	background-color: #FEFFF8;
-}
 .banner{
 	clear: both;
 	width:960px;
@@ -36,8 +33,9 @@
 }
 
 /* filter */
-.filter-form{
+form{
 	float: right;
+	overflow: hidden;
 }
 .filter-form label{
 	cursor: pointer;
