@@ -67,7 +67,7 @@ body{
 }
 .sub{
 	background-color: #FEFFF8;
-	min-height: 100%;
+	min-height: 100%;	
 }
 /* header */
 a {
@@ -79,7 +79,7 @@ a {
 	height:6px;
 	background-color: #3E3828;
 }
-.header{
+header{
 	width: 960px;
 	overflow: hidden;
 	margin: 0 auto;
@@ -126,17 +126,12 @@ a {
 }
 
 /* content */
-.content{
-	padding-bottom:1.9em;
-}
 
 /* footer */
 footer{
 	padding: 30px 50px;
 	background-color: #3E3828;
 	color : #EBF0DC;
-	margin-top:-1.9em;
-	height:1.9em;
 }
 .footer_wrap{
 	width:960px;
