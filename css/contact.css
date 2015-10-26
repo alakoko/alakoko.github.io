@@ -122,7 +122,6 @@ button{
 	text-align: center;
 	float:left;
 	margin-right: 10px;
-	transition: background-color 0.3s;
 	border:0;
 	padding: 10px 20px;
 }
@@ -130,7 +129,16 @@ button{
 	background: #3E3828;
 	color: #FFFFFF;
 }
+.submit:hover{
+	background: #655F4C;
+	transition: background-color 0.3s;
+}
 .reset{
 	background: #9E9085;
 	color: #FFFFFF;
+}
+
+.reset:hover{
+	background: #BAAFA4;
+	transition: background-color 0.3s;
 }

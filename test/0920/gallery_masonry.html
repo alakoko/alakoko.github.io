@@ -1,9 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<meta charset="utf-8">
+<title>json+masonry #2</title>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+<style>
+body, body { height: 100%; margin: 0; }
+#gallery { list-style: none; padding: 0; margin: 0; }
+#gallery > li { margin-bottom: 10px; }
+#gallery a { display: block; height: 100%; position: relative; overflow: hidden; }
+#gallery img { width: 100%; height: 100%; }
+#gallery span { position: absolute; top: 100%; left: 100%; width: 100%; height: 100%; background-color: rgba(255, 255, 255, .6); color: #000; line-height: 50px; font-size: 14px; font-weight: bold; text-align: center; }
+.img-loading { display: none; }
+.preloader { position: absolute; width: 50px; height: 50px; top: 50%; left: 50%; margin: -25px 0 0 -25px; }
+.size-1 { width: 150px; :100px; }
+.size-2 { width: 310px; :220px; }
+#galleryFilter { list-style: none; padding: 10px; margin: 10px; border: 1px solid #000; }
+#galleryFilter > li { display: inline-block; margin: 0 10px; }
+#loadMore { position: relative; display: block; width: 100px; margin: 50px auto; }
+#popupWrap { position: fixed; display: none; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, .8); }
+#popup { position: absolute; max-width: 90%; height: auto; max-height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 10px; background: #fff; text-align: center; }
+#popup img { vertical-align: middle; width: 100%; max-width: 100%; max-height: 100%; }
+</style>
+</head>
+
+<body>
+<!-- 필터 버튼 모음 -->
+<ul id="galleryFilter">
+	<li class="form-item">
+		<input type="radio" id="filterAll" name="filter" value="all" checked>
+		<label for="filterAll">All</label>
+	</li>
+	<li class="form-item">
+		<input type="radio" id="filterGirl" name="filter" value="girl">
+		<label for="filterGirl">Girl</label>
+	</li>
+	<li class="form-item">
+		<input type="radio" id="filterWoman" name="filter" value="woman">
+		<label for="filterWoman">Woman</label>
+	</li>
+	<li class="form-item">
+		<input type="radio" id="filterPeople" name="filter" value="people">
+		<label for="filterPeople">People</label>
+	</li>
+	<li class="form-item">
+		<input type="radio" id="filterScene" name="filter" value="scene">
+		<label for="filterScene">Scene</label>
+	</li>
+	<li class="form-item">
+		<input type="radio" id="filterLandscape" name="filter" value="landscape">
+		<label for="filterLandscape">Landscape</label>
+	</li>
+</ul>
+
+<!-- 갤러리 -->
+<ul id="gallery"></ul>
+
+<!-- 더보기 버튼 -->
+<button id="loadMore">Load More</button>
+
+<!-- 라이트박스(레이어팝업) -->
+<div id="popupWrap">
+	<div id="popup"></div>
+</div>
+
+<script>
 (function($){
 	var gallery = document.getElementById('gallery'),
 		$gallery = $(gallery),
 		$img,
 		imgLoad,
-		$preloader = $('<img class="preloader" src="../images/imgloading.gif">'),
+		$preloader = $('<img class="preloader" src="http://power4ce.cafe24.com/images/ajax-loader.gif">'),
 		$loadMoreBtn = $('#loadMore'),
 		$filter = $('#galleryFilter'),
 		loadItemCount = 10,
@@ -53,8 +122,8 @@
 			var sizeType = Math.ceil(Math.random()*2);
 			var itemHTML = 
 					'<li class="img-loading size-' + sizeType + '">' +
-						'<a href="../images/travelog/' + item.images.large + '">' +
-							'<img src="../images/travelog/' + item.images.thumb + '" alt="' + item.title + '">' +
+						'<a href="http://power4ce.cafe24.com/images/' + item.images.large + '">' +
+							'<img src="http://power4ce.cafe24.com/images/' + item.images.thumb + '" alt="' + item.title + '">' +
 							'<span>' + item.title + '</span>' +
 						'</a>' +
 					'</li>';
@@ -165,8 +234,8 @@
 		gutter: 10,
 		itemSelector: 'li'
 	});
-	// $.getJSON('../data/imgdata2.json', initGallery);
-	$.getJSON('../data/content.json', initGallery);
+	$.getJSON('../../data/imgdata2.json', initGallery);
+
 	// 콜백 등록
 	$gallery.on('mouseenter mouseleave', 'a', hoverDirection)
 	.on('click', 'a', lightBoxShow);
@@ -174,3 +243,6 @@
 	$('#popup').on('click', function(e){ e.stopPropagation();});
 
 })(jQuery);
+</script>
+</body>
+</html>
