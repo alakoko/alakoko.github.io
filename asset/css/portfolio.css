@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* common */
+.background{
+	background-color: #FEFFF8;
+}
+.banner{
+	overflow: hidden;
+	clear: both;
+	width:960px;
+	margin: 0 auto;
+}
+.banner>h1{
+	font-size: 7em;
+	letter-spacing: -1px;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.banner > .tab{
+	float:left;
+	position: relative;
+	/*bottom:60px;*/
+	display: block;
+	overflow: hidden;
+	width:865px;
+	/*border:1px solid black;*/
+	border-bottom: 3px solid #D9D0C9;
+}
+.banner > .tab > li{
+	display: block;
+	float:left;
+	position: relative;
+	left: 583px;
+	width: 130px;
+	height: 30px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	/*border: 1px solid black;*/
+}
+.banner > .tab > .on{
+	
+	background: #D9D0C9;
+	border-radius: 10px 10px 0px 0px;
+	line-height: 2.1;
+	letter-spacing: 1px;
+	font-weight: bold;
+	font-size: 1.5em;
+	border: 3px solid #D9D0C9;
+
+}
+.banner > .tab > .off{
+	background: #9E9085;
+	line-height: 2.5;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	top:6px;
+}
+.content{
+	clear: both;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 960px;
+}
+.content>section>h2{
+	margin-top: 5px;
+	font-size: 2em;
+	color: #3E3827;
+	font-family: 'Ubuntu', sans-serif;
+}
+.content>p{
+	font-size: 9em;
+	letter-spacing: -2px;
+	color: white;
+	border: 1px solid white;
+}

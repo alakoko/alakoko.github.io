@@ -3,7 +3,7 @@
 		$gallery = $(gallery),
 		$img,
 		imgLoad,
-		$preloader = $('<img class="preloader" src="../images/imgloading.gif">'),
+		$preloader = $('<img class="preloader" src="../asset/images/imgloading.gif">'),
 		$loadMoreBtn = $('#loadMore'),
 		$filter = $('#galleryFilter'),
 		loadItemCount = 10,
@@ -53,8 +53,8 @@
 			var sizeType = Math.ceil(Math.random()*2);
 			var itemHTML = 
 					'<li class="img-loading size-' + sizeType + '">' +
-						'<a href="../images/travelog/' + item.images.large + '">' +
-							'<img src="../images/travelog/' + item.images.thumb + '" alt="' + item.title + '">' +
+						'<a href="../asset/images/travelog/' + item.images.large + '">' +
+							'<img src="../asset/images/travelog/' + item.images.thumb + '" alt="' + item.title + '">' +
 							'<span>' + item.title + '</span>' +
 						'</a>' +
 					'</li>';
@@ -166,7 +166,7 @@
 		itemSelector: 'li'
 	});
 	// $.getJSON('../data/imgdata2.json', initGallery);
-	$.getJSON('../data/content.json', initGallery);
+	$.getJSON('../asset/data/content.json', initGallery);
 	// 콜백 등록
 	$gallery.on('mouseenter mouseleave', 'a', hoverDirection)
 	.on('click', 'a', lightBoxShow);
