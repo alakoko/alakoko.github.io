@@ -37,25 +37,31 @@
 	text-align: center;
 	border-radius: 10px 10px 0px 0px;
 	/*border: 1px solid black;*/
+	background: #9E9085;
+	line-height: 2.5;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 1.2em;
+	top:6px;
+	text-transform: uppercase;
 }
 .banner > .tab > .on{
 	
 	background: #D9D0C9;
-	border-radius: 10px 10px 0px 0px;
-	line-height: 2.1;
-	letter-spacing: 1px;
+	line-height: 2.2;
+	/*letter-spacing: 1px;*/
 	font-weight: bold;
 	font-size: 1.5em;
 	border: 3px solid #D9D0C9;
-
+	top:0px;
 }
-.banner > .tab > .off{
+/*.banner > .tab > .off{
 	background: #9E9085;
 	line-height: 2.5;
 	letter-spacing: 1px;
 	font-size: 1.2em;
 	top:6px;
-}
+}*/
 .content{
 	clear: both;
 	margin: 0 auto;
