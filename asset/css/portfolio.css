@@ -19,7 +19,7 @@
 
 .banner > .tab{
 	float:left;
-	position: relative;
+	position: relative;		
 	/*bottom:60px;*/
 	display: block;
 	overflow: hidden;
@@ -44,6 +44,7 @@
 	font-size: 1.2em;
 	top:6px;
 	text-transform: uppercase;
+	font-family: 'Ubuntu', sans-serif;
 }
 .banner > .tab > .on{
 	
