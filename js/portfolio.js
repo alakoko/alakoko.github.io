@@ -1,15 +1,16 @@
-$('#project').hide();
-$('.tab li').click(function  () {
-	var activeTab = $(this).attr("rel");
-       	// console.log("activeTab:"+activeTab);
+$(document).ready(function() {
+	$('#project').hide();
+	$('.tab li').click(function  () {
+		var activeTab = $(this).attr("rel");
+	       	// console.log("activeTab:"+activeTab);
 
-    var offTab = $(this).siblings('li').attr("rel");
-    	// console.log("offTab:"+offTab);
+	    var offTab = $(this).siblings('li').attr("rel");
+	    	// console.log("offTab:"+offTab);
 
-	$(this).siblings().removeClass('on');
-	$(this).addClass('on');
-	$("#" + activeTab).fadeIn();
-	$("#" + offTab).hide();
+		$(this).siblings().removeClass('on');
+		$(this).addClass('on');
+		$("#" + activeTab).fadeIn();
+		$("#" + offTab).hide();
 
+	});
 });
-
