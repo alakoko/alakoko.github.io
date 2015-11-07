@@ -152,11 +152,11 @@ footer{
 	color : #EBF0DC;
 }
 a span.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
 /* current page nav */
@@ -187,4 +187,25 @@ a span.screen-reader-text {
 	right: 50px;
 	height: 50px;
 	width: 50px;
+}
+
+/* skip */
+.skip {
+	margin:0 -1px -1px 0;
+	width: 1px;
+	height: 1px;
+	float: left;
+	overflow: hidden;
+}
+.skip:active, .skip:focus{
+	position: absolute;
+	overflow: hidden;
+	top:6px;
+	left:0px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	text-align: center;
+	width: 100%;
+	background-color: #D9D0C9;
 }
