@@ -55,7 +55,7 @@
 					'<li class="img-loading size-' + sizeType + '">' +
 						'<a href="../asset/images/travelog/' + item.images.large + '">' +
 							'<img src="../asset/images/travelog/' + item.images.thumb + '" alt="' + item.title + '">' +
-							'<span>' + item.title + '</span>' +
+							'<span><strong>'+item.title +'</strong></span>' +
 						'</a>' +
 					'</li>';
 			elements.push($(itemHTML)[0]);

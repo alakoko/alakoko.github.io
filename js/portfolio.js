@@ -9,13 +9,18 @@
 		$("#" + activeTab).fadeIn();
 
 		$("section").not($("#" + activeTab)).hide();
+
 	});
 
 	var report_list = document.getElementById('report_list');
 	var $report = $(report_list);
 
+	var section_career = document.getElementById('career');
+	var $career_list = $(section_career).find('ul');
+	var $career = $($career_list);
+
 		console.log("report_list" + report_list);
-		console.log("report" + $(report_list));
+		console.log("$report" + $(report_list));
 
 		// 마우스 이동방향을 얻어오는 함수.
 	// 0:top, 1:right, 2:bottom, 3:left
@@ -53,9 +58,16 @@
 		$overlay.stop(true).animate(animateTo, 250);
 	};
 
-	//실행
-	$(report_list).children('li').addClass('report_item');
-	$(report_list).find('span').addClass('caption');
+	//report tab action
+	$report.children('li').addClass('report_item');
+	$report.find('span').addClass('caption');
 	$report.on('mouseenter mouseleave', '.report_item a', hoverDirection);
+
+
+	//career tab action
+	$career.children('li').addClass('report_item');
+	$career.find('span').addClass('caption');
+	$career.on('mouseenter mouseleave', '.report_item a', hoverDirection);
+
 
 })(jQuery);

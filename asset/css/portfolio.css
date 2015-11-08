@@ -72,7 +72,9 @@
 	overflow: hidden;
 	width: 960px;
 }
-#content>section>h2{
+section>h2{
+	width: 271px;
+	text-align: right;
 	margin-top: 25px;
 	font-size: 2em;
 	color: #3E3827;
@@ -80,45 +82,48 @@
 	font-weight: bold;
 }
 
-#content > section > .description{
+section > .description{
 	float:left;
 	margin-right: 12px;
 	width: 267px;
 	text-align:right;
 }
-#content > section > .description > hr {
+section > .description > hr {
 	margin-top: 20px;
 	border-width:1px 0px 0px 0px;
  	border-style:dotted;
  	border-color:#D9D0C9; 
 }
-#content > section > .description > span{
+section > hr {
+	border-style: solid;
+	border-color:#D9D0C9; 
+	margin-bottom: 20px;
+}
+section > .description > span{
 	font-size: 1.5em;
 	font-family: 'Open Sans', sans-serif;
 }
-#content > section > .description > p{
+section > .description > p{
 	margin-top: 20px;
-	/*text-align:justify;*/
 	text-align:right;
 	font-size: 1.1em;
 	display: block;
-	/*width: 267px;*/
 	font-family: 'Open Sans', sans-serif;
 }
-#report_list {
+.report_list {
 	overflow: hidden;
 	float: left;
 	position: relative;
 	top:-45px;
 	width: 680px;
 }
-#report_list > li{
+.report_list > li{
 	margin-top:20px;
 	width: 219px;
 	float: left;
 	border:1px solid #9E9084;
 }
-#report_list > .li_mg{
+.report_list > .li_mg{
 	margin:20px 8px 0 8px;
 }
 .report_item> a> img{
@@ -132,12 +137,16 @@
 	overflow: hidden;
 	position:relative;
 }
-
+.report_item > a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
 .report_item > a >.caption{
 	background-color: rgba(0, 0, 0, 0.6);
 	color: #FFFFFF;
-	height: 165px;
-	width: 219px;
+	height: 100%;
+	width: 100%;
 	position: absolute;
 	top:100%;
 	left:100%;
@@ -145,7 +154,7 @@
 	text-align: center;
 }
 
-#report_list > li > .detail {
+.report_list > li > .detail {
 	overflow: hidden;
 	padding:10px 15px 0px 15px;
 	width: 189px;
@@ -153,13 +162,13 @@
 	/*background-color: #D9D0C9;*/
 	background-color: #E8E8E4;
 }
-#report_list > li > .detail >h3 {
+.report_list > li > .detail >h3 {
 	float: left;
 	margin-bottom: 5px;
 	width: 210px;
 	font-size: 1.1em;
 }
-#report_list > li > .detail > .dwnbtn{
+.report_list > li > .detail > .dwnbtn{
 	display: block;
 	float: left;
 	position: relative;
@@ -171,7 +180,7 @@
 	color:#FFFFFF;
 }
 
-#report_list > li > .detail > .dwnbtn:hover{
+.report_list > li > .detail > .dwnbtn:hover{
 	background-color: #3E3827;
 	transition: background-color 0.3s;
 }
