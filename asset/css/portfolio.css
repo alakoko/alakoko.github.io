@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /* common */
 .background{
@@ -23,7 +25,7 @@
 	/*bottom:60px;*/
 	display: block;
 	overflow: hidden;
-	width:865px;
+	width:960px;
 	/*border:1px solid black;*/
 	border-bottom: 3px solid #D9D0C9;
 }
@@ -31,7 +33,7 @@
 	display: block;
 	float:left;
 	position: relative;
-	left: 583px;
+	left: 415px;
 	width: 130px;
 	height: 30px;
 	text-align: center;
@@ -45,6 +47,7 @@
 	top:6px;
 	text-transform: uppercase;
 	font-family: 'Ubuntu', sans-serif;
+	margin-right: 1px;
 }
 .banner > .tab > .on{
 	
@@ -63,21 +66,121 @@
 	font-size: 1.2em;
 	top:6px;
 }*/
-.content{
+#content{
 	clear: both;
 	margin: 0 auto;
 	overflow: hidden;
 	width: 960px;
 }
-.content>section>h2{
-	margin-top: 5px;
+section>h2{
+	width: 271px;
+	text-align: right;
+	margin-top: 25px;
 	font-size: 2em;
 	color: #3E3827;
 	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
 }
-.content>p{
-	font-size: 9em;
-	letter-spacing: -2px;
-	color: white;
-	border: 1px solid white;
+
+section > .description{
+	float:left;
+	margin-right: 12px;
+	width: 267px;
+	text-align:right;
+}
+section > .description > hr {
+	margin-top: 20px;
+	border-width:1px 0px 0px 0px;
+ 	border-style:dotted;
+ 	border-color:#D9D0C9; 
+}
+section > hr {
+	border-style: solid;
+	border-color:#D9D0C9; 
+	margin-bottom: 20px;
+}
+section > .description > span{
+	font-size: 1.5em;
+	font-family: 'Open Sans', sans-serif;
+}
+section > .description > p{
+	margin-top: 20px;
+	text-align:right;
+	font-size: 1.1em;
+	display: block;
+	font-family: 'Open Sans', sans-serif;
+}
+.report_list {
+	overflow: hidden;
+	float: left;
+	position: relative;
+	top:-45px;
+	width: 680px;
+}
+.report_list > li{
+	margin-top:20px;
+	width: 219px;
+	float: left;
+	border:1px solid #9E9084;
+}
+.report_list > .li_mg{
+	margin:20px 8px 0 8px;
+}
+.report_item> a> img{
+	display: block;
+	width: 219px;
+	height: 165px;
+}
+
+.report_item{
+	display: block;
+	overflow: hidden;
+	position:relative;
+}
+.report_item > a{
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.report_item > a >.caption{
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:100%;
+	left:100%;
+	line-height: 165px;
+	text-align: center;
+}
+
+.report_list > li > .detail {
+	overflow: hidden;
+	padding:10px 15px 0px 15px;
+	width: 189px;
+	height: 50px;
+	/*background-color: #D9D0C9;*/
+	background-color: #E8E8E4;
+}
+.report_list > li > .detail >h3 {
+	float: left;
+	margin-bottom: 5px;
+	width: 210px;
+	font-size: 1.1em;
+}
+.report_list > li > .detail > .dwnbtn{
+	display: block;
+	float: left;
+	position: relative;
+	width: 70px;
+	padding: 3px;
+	text-align: center;
+	background-color: #9E9084;
+	font-size: 0.7em;
+	color:#FFFFFF;
+}
+
+.report_list > li > .detail > .dwnbtn:hover{
+	background-color: #3E3827;
+	transition: background-color 0.3s;
 }
