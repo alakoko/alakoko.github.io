@@ -1,21 +1,21 @@
 [
 	{
-		"title": "europe1",
+		"title": "Tour Eiffel",
 		"category": "europe",
 		"images": { "thumb" : "europe1.jpg", "large" : "europe1.jpg" }
 	},
 	{
-		"title": "europe2",
+		"title": "London King's Cross station",
 		"category": "europe",
 		"images": { "thumb" : "europe2.jpg", "large" : "europe2.jpg" }
 	},
 	{
-		"title": "europe3",
+		"title": "Tower Bridge",
 		"category": "europe",
 		"images": { "thumb" : "europe3.jpg", "large" : "europe3.jpg" }
 	},
 	{
-		"title": "europe4",
+		"title": "London Eye",
 		"category": "europe",
 		"images": { "thumb" : "europe4.jpg", "large" : "europe4.jpg" }
 	},
