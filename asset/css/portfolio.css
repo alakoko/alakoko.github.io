@@ -174,23 +174,30 @@ section > .description > p{
 	font-size: 1em;
 	color:#FFFFFF;
 }
+.report_list > li > .detail > a+a{
+	margin-left: 10px;
+}
 
 .report_list > li > .detail > .dwnbtn:hover{
 	background-color: #3E3827;
 	transition: background-color 0.3s;
 }
 
-.mac_wrap{
+.portfolio_wrap{
 	position: relative;
-	margin:20px 40px 0px 40px;
+	top: -30px;
 	float: left;
-	top:-45px;
 	display: block;
+	width: 680px;
+
+}
+.mac_wrap{
+	margin:0 auto;
 	background: url('../images/mac.png') no-repeat;
 	width: 600px;
 	height: 484px;	
 }
-.portfolio_wrap{
+.portfolio-container{
 	position: relative;
 	left: 24px;
 	float: left;
@@ -200,14 +207,9 @@ section > .description > p{
 	height: 311px;
 	margin: 24px auto;
 }
-/*
-.portfolio_list{
-	position: relative;
-	overflow: hidden;
-	width: 552px;
-}*/
-.portfolio_list {
-	width: 2800px;
+
+.portfolio-list {
+	width: 2760px;
 }
 
 /**
@@ -216,27 +218,12 @@ section > .description > p{
  * --------------------------------
  */
 
-.hw-gallery * {
-	box-sizing: border-box;
-}
-
-.hw-gallery ul {
-	position: relative;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-	list-style: none;
-}
-
-.hw-gallery-pagenation {
-	float: left;
-	margin-top: 14px;
-	display: block;
+.portfolio-pagenation {
+	margin: 0 auto 15px auto;
 	text-align: center;
-	border:1px solid black;
 }
 
-.hw-gallery-pagenation [role=button] {
+.portfolio-pagenation [role=button] {
 	display: inline-block;
 	width: 10px;
 	height: 10px;
@@ -245,20 +232,20 @@ section > .description > p{
 	border-radius: 50%;
 }
 
-.hw-gallery-pagenation [role=button]:last-child {
+.portfolio-pagenation [role=button]:last-child {
 	margin-right: 0;
 }
 
-.hw-gallery-pagenation [role=button]:hover,
-.hw-gallery-pagenation [role=button]:focus {
+.portfolio-pagenation [role=button]:hover,
+.portfolio-pagenation [role=button]:focus {
 	background: #565654;
 }
 
-.hw-gallery-pagenation [role=button]:focus {
+.portfolio-pagenation [role=button]:focus {
 	outline: none;
 }
 
-.hw-gallery-pagenation [role=button].on {
+.portfolio-pagenation [role=button].on {
 	background: #ff7500;
 	width: 15px;
 	height: 15px;
@@ -266,30 +253,27 @@ section > .description > p{
 }
 
 
-.portfolio_list.anim {
+.portfolio-list.anim {
 	transition: all 0.6s ease;
 }
 
-.portfolio_list{
-	height: 350px;
-}
-
-.hw-gallery-item {
+.portfolio-item {
 	position: relative;
 	overflow: hidden;
 	float: left;
 	width: 552px;
-	min-height: 311px;
 }
 
-.hw-gallery-item img {
+.portfolio-item img {
 	z-index: -10;
+	width: 552px;
+	min-height: 311px;
 	top: 0;
 	left: 0;
 	height: auto;
 }
 
-.hw-gallery-item *:not(img) {
+.portfolio-item *:not(img) {
 	padding-left: 0.6em;
 	padding-right: 0.6em;
 }

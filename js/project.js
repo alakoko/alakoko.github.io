@@ -1,9 +1,9 @@
-(function(global, hw){
+(function(global){
 	'use strict';
 
 	// View 이벤트 대상 참조 및 변수 설정
-	var	container       = document.querySelector('.portfolio_list'),
-		pagenation      = document.querySelector('.hw-gallery-pagenation'),
+	var	container       = document.querySelector('.portfolio-list'),
+		pagenation      = document.querySelector('.portfolio-pagenation'),
 		pagenation_btns = pagenation.querySelectorAll('a'),
 		container_width = 552;
 
@@ -94,13 +94,4 @@
 		[].forEach.call(nodeList, fn);
 	}
 
-	/**
-	 * --------------------------------
-	 * hanwha.controller 객체 설정
-	 * --------------------------------
-	 */
-	// hw.controller = {
-	// 	'slide'     : slide,
-	// };
-
-})(window, window.hanwha);
+})(window);
