@@ -59,13 +59,7 @@
 	border: 3px solid #D9D0C9;
 	top:0px;
 }
-/*.banner > .tab > .off{
-	background: #9E9085;
-	line-height: 2.5;
-	letter-spacing: 1px;
-	font-size: 1.2em;
-	top:6px;
-}*/
+/* content common */
 #content{
 	clear: both;
 	margin: 0 auto;
@@ -110,6 +104,7 @@ section > .description > p{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 }
+ /* report, career */
 .report_list {
 	overflow: hidden;
 	float: left;
@@ -172,11 +167,11 @@ section > .description > p{
 	display: block;
 	float: left;
 	position: relative;
-	width: 70px;
+	width: 80px;
 	padding: 3px;
 	text-align: center;
 	background-color: #9E9084;
-	font-size: 0.7em;
+	font-size: 1em;
 	color:#FFFFFF;
 }
 
@@ -184,3 +179,118 @@ section > .description > p{
 	background-color: #3E3827;
 	transition: background-color 0.3s;
 }
+
+.mac_wrap{
+	position: relative;
+	margin:20px 40px 0px 40px;
+	float: left;
+	top:-45px;
+	display: block;
+	background: url('../images/mac.png') no-repeat;
+	width: 600px;
+	height: 484px;	
+}
+.portfolio_wrap{
+	position: relative;
+	left: 24px;
+	float: left;
+	overflow: hidden;
+	display: block;
+	width: 552px;
+	height: 311px;
+	margin: 24px auto;
+}
+/*
+.portfolio_list{
+	position: relative;
+	overflow: hidden;
+	width: 552px;
+}*/
+.portfolio_list {
+	width: 2800px;
+}
+
+/**
+ * --------------------------------
+ * .hw-gallery
+ * --------------------------------
+ */
+
+.hw-gallery * {
+	box-sizing: border-box;
+}
+
+.hw-gallery ul {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.hw-gallery-pagenation {
+	float: left;
+	margin-top: 14px;
+	display: block;
+	text-align: center;
+	border:1px solid black;
+}
+
+.hw-gallery-pagenation [role=button] {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 30px;
+	background: #d4d3d0;
+	border-radius: 50%;
+}
+
+.hw-gallery-pagenation [role=button]:last-child {
+	margin-right: 0;
+}
+
+.hw-gallery-pagenation [role=button]:hover,
+.hw-gallery-pagenation [role=button]:focus {
+	background: #565654;
+}
+
+.hw-gallery-pagenation [role=button]:focus {
+	outline: none;
+}
+
+.hw-gallery-pagenation [role=button].on {
+	background: #ff7500;
+	width: 15px;
+	height: 15px;
+	transform: translate(25%, 25%);
+}
+
+
+.portfolio_list.anim {
+	transition: all 0.6s ease;
+}
+
+.portfolio_list{
+	height: 350px;
+}
+
+.hw-gallery-item {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 552px;
+	min-height: 311px;
+}
+
+.hw-gallery-item img {
+	z-index: -10;
+	top: 0;
+	left: 0;
+	height: auto;
+}
+
+.hw-gallery-item *:not(img) {
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+}
+

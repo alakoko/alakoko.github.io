@@ -1,4 +1,5 @@
 (function($){
+	// tab menu 함수
 	$('#project, #example, #career').hide();
 	$('.tab li').click(function  () {
 		var activeTab = $(this).attr("rel");
@@ -12,6 +13,7 @@
 
 	});
 
+	// report 마우스 오버
 	var report_list = document.getElementById('report_list');
 	var $report = $(report_list);
 
@@ -22,7 +24,7 @@
 		console.log("report_list" + report_list);
 		console.log("$report" + $(report_list));
 
-		// 마우스 이동방향을 얻어오는 함수.
+	// 마우스 이동방향을 얻어오는 함수.
 	// 0:top, 1:right, 2:bottom, 3:left
 	var getMouseDirection = function(e){
 		var $el = $(e.currentTarget),
