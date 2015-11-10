@@ -68,6 +68,7 @@ body{
 .sub{
 	overflow: hidden;
 	min-height: 100%;	
+	padding-bottom:40px; 
 	background-color: #FEFFF8;
 }
 /* header */

@@ -20,22 +20,22 @@
 		"images": { "thumb" : "europe4.jpg", "large" : "europe4.jpg" }
 	},
 	{
-		"title": "europe5",
+		"title": "Montserrat",
 		"category": "europe",
 		"images": { "thumb" : "europe5.jpg", "large" : "europe5.jpg" }
 	},
 	{
-		"title": "europe6",
+		"title": "Hofburg Palace",
 		"category": "europe",
 		"images": { "thumb" : "europe6.jpg", "large" : "europe6.jpg" }
 	},
 	{
-		"title": "europe7",
+		"title": "Castel Sant'Angelo",
 		"category": "europe",
 		"images": { "thumb" : "europe7.jpg", "large" : "europe7.jpg" }
 	},
 	{
-		"title": "jeju1",
+		"title": "지미봉",
 		"category": "jeju",
 		"images": { "thumb" : "jeju1.jpg", "large" : "jeju1.jpg" }
 	},
@@ -50,7 +50,7 @@
 		"images": { "thumb" : "jeju3.jpg", "large" : "jeju3.jpg" }
 	},
 	{
-		"title": "jeju4",
+		"title": "지미봉 일출",
 		"category": "jeju",
 		"images": { "thumb" : "jeju4.jpg", "large" : "jeju4.jpg" }
 	},
@@ -110,7 +110,7 @@
 		"images": { "thumb" : "nami3.jpg", "large" : "nami3.jpg" }
 	},
 		{
-		"title": "jeju1",
+		"title": "지미봉",
 		"category": "korea",
 		"images": { "thumb" : "jeju1.jpg", "large" : "jeju1.jpg" }
 	},
@@ -125,7 +125,7 @@
 		"images": { "thumb" : "jeju3.jpg", "large" : "jeju3.jpg" }
 	},
 	{
-		"title": "jeju4",
+		"title": "지미봉 일출",
 		"category": "korea",
 		"images": { "thumb" : "jeju4.jpg", "large" : "jeju4.jpg" }
 	},
