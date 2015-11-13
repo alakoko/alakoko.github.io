@@ -21,8 +21,6 @@
 	var $career_list = $(section_career).find('ul');
 	var $career = $($career_list);
 
-		console.log("report_list" + report_list);
-		console.log("$report" + $(report_list));
 
 	// 마우스 이동방향을 얻어오는 함수.
 	// 0:top, 1:right, 2:bottom, 3:left

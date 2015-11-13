@@ -1,9 +1,10 @@
 $(document).ready(function() {
-	var $btnTop = $('#back_top');
+	
 	if (window.location.href && document.getElementById('CP')) {
 		$('#CP').addClass('current');
 		 }
-
+	
+	var $btnTop = $('#back_top');
 	var btnTop = function(){
 			var scrt = $('body').scrollTop(),
 				wh = $(window).height() / 2;

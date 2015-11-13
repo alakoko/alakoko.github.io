@@ -174,14 +174,14 @@ a span.screen-reader-text {
 #CP:hover{
 	background-color: #3E3828;
 }
-.back_top{
+#back_top{
 	background: url(../images/up.png) 50% 50% no-repeat rgba(36,32,26,.25);
 	-moz-transition: none;
 	-o-transition: none;
 	-webkit-transition: none;
 	transition: none;
 	filter: alpha(Opacity=0);
-	opacity: 0;
+	opacity: 1;
 	border-radius: 5px;
 	position: fixed;
 	display: block;
