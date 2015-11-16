@@ -3,6 +3,8 @@
 
 .main{
 	width: 100%;
+	overflow: hidden;
+	min-height: 100%;
 	background-image: url('../images/home2_m.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -14,6 +16,7 @@
 	margin: 0 auto;
 }
 .banner>p{
+	position: relative;
 	font-size: 9em;
 	letter-spacing: -2px;
 	color: #A4A39F;
@@ -22,19 +25,25 @@
 	font-family: 'Walter Turncoat', cursive;
 }
 .banner>.button{
-	font-size: 1.5em;
+	position: relative;
+	bottom: 100px;
+	left: 47%;
 	width: 80px;
 	height: 80px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
 	background: black;
-	text-align: center;
-	line-height: 80px;
+	/*line-height: 80px;*/
 	color: white;
-	margin:0 auto;
+	font-size: 1.5em;
+	text-align: center;
 }
 .banner>.button>a{
+	float: left;
+	position: relative;
+	top: 25px;
+	left:14px;
 	display: block;
 	color: white;
 }

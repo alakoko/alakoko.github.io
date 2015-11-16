@@ -99,8 +99,8 @@ section > .description > span{
 }
 section > .description > p{
 	margin-top: 20px;
-	text-align:right;
-	font-size: 1.1em;
+	text-align:left;
+	font-size: 1.2em;
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -200,10 +200,12 @@ section > .submenu{
 
 }
 .mac_wrap{
-	margin:0 auto;
-	background: url('../images/mac.png') no-repeat;
+	margin:0 auto 20px auto;
 	width: 600px;
 	height: 484px;	
+	background: url('../images/mac.png') no-repeat;
+	/* Webkit reflection */
+  -webkit-box-reflect : below 0 -webkit-gradient(linear, left bottom, left top, from(rgba(255,255,255,0.5)), color-stop(0.1, transparent));
 }
 
 
@@ -285,4 +287,3 @@ section > .submenu{
 	padding-left: 0.6em;
 	padding-right: 0.6em;
 }
-
