@@ -64,6 +64,7 @@ position: relative;
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
 	background: #D9D0C9;
+	color: #3E3827;
 }
 
 /*.cbp_tmtimeline > li .cbp_tmlabel h2 { 

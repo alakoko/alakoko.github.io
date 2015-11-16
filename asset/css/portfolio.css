@@ -104,6 +104,14 @@ section > .description > p{
 	display: block;
 	font-family: 'Open Sans', sans-serif;
 }
+
+section > .submenu{
+	float:left;
+	margin: 20px 12px 0 0;
+	width: 267px;
+	text-align:right;
+	background : #9E9084;
+}
  /* report, career */
 .report_list {
 	overflow: hidden;
@@ -197,26 +205,17 @@ section > .description > p{
 	width: 600px;
 	height: 484px;	
 }
-.portfolio-container{
-	position: relative;
-	left: 24px;
-	float: left;
-	overflow: hidden;
-	display: block;
-	width: 552px;
-	height: 312	px;
-	margin: 24px auto;
-}
 
-.portfolio-list {
-	width: 2760px;
-}
+
 
 /**
  * --------------------------------
  * portfolio-gallery
  * --------------------------------
  */
+.portfolio-list {
+	width: 2760px;
+}
 
 .portfolio-pagenation {
 	margin: 0 auto 15px auto;
@@ -251,7 +250,16 @@ section > .description > p{
 	height: 15px;
 	transform: translate(25%, 25%);
 }
-
+.portfolio-container{
+	position: relative;
+	left: 24px;
+	float: left;
+	overflow: hidden;
+	display: block;
+	width: 552px;
+	height: 312	px;
+	margin: 24px auto;
+}
 
 .portfolio-list.anim {
 	transition: all 0.6s ease;

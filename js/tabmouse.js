@@ -13,13 +13,16 @@
 
 	});
 
-	// report 마우스 오버
+
 	var report_list = document.getElementById('report_list');
 	var $report = $(report_list);
 
 	var section_career = document.getElementById('career');
 	var $career_list = $(section_career).find('ul');
 	var $career = $($career_list);
+
+	var portfolio_list = document.getElementById('portfolio_list');
+	var $portfolio = $(portfolio_list);
 
 
 	// 마우스 이동방향을 얻어오는 함수.
@@ -69,5 +72,9 @@
 	$career.find('span').addClass('caption');
 	$career.on('mouseenter mouseleave', '.report_item a', hoverDirection);
 
+	//portfolio tab action
+	$portfolio.children('li').addClass('report_item');
+	$portfolio.find('span').addClass('caption');
+	$portfolio.on('mouseenter mouseleave', '.report_item a', hoverDirection);
 
 })(jQuery);

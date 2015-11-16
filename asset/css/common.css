@@ -153,7 +153,7 @@ footer{
 .link>li>a>.fa {
 	color : #EBF0DC;
 }
-a span.screen-reader-text {
+.screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
