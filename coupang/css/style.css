@@ -55,15 +55,14 @@ select, input, textarea {
 
 /* layout */
 body{
+	margin:0 auto;
 	letter-spacing:-1.5px;
 	width: 900px;
-	border:1px solid red;
 }
 .wrap{
 	width: 820px;
 	margin: 0 auto;
 	overflow: hidden;
-	border:1px solid red;
 }
 /* button */
 label{

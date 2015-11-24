@@ -10,6 +10,11 @@
 		"images": { "thumb" : "europe2.jpg", "large" : "europe2.jpg" }
 	},
 	{
+		"title": "paragliding, Interlaken",
+		"category": "europe",
+		"images": { "thumb" : "europe8.jpg", "large" : "europe8.jpg" }
+	},
+	{
 		"title": "Tower Bridge",
 		"category": "europe",
 		"images": { "thumb" : "europe3.jpg", "large" : "europe3.jpg" }
