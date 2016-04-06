@@ -21,7 +21,6 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 #content{
-	margin-top: 27px;
 	clear: both;
 	width:960px;
 	margin: 35px auto 35px auto;
@@ -30,17 +29,17 @@
 	/*border:1px solid black;*/
 }
 .contact_box{
-	width: 480px;
 	float:left;
+	width: 480px;
 }
 .contact_box>.mobile{
-	width: 480px;
 	float:left;
+	width: 480px;
+	margin:16px 0 40px 0;
 	font-size: 3.5em;
 	letter-spacing: -1px;
 	color: black;
 	font-family: 'Montserrat', sans-serif;
-	margin:16px 0 40px 0;
 }
 .contact_box>.address{
 	width: 480px;
@@ -57,10 +56,10 @@
 	margin-top:7px;
 }
 .list_contact>li>.fa{
-	color: #3D3727;
 	display: inline-block;
 	width: 25px;
 	height: 25px;
+	color: #3D3727;
 	text-align: center;
 }
 .list_contact > li span{

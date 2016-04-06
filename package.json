@@ -7,5 +7,27 @@
     "gulp": "^3.9.0",
     "gulp-watch": "^4.3.5",
     "reload": "^0.4.0"
+  },
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alakoko/alakoko.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alakoko/alakoko.github.io/issues"
+  },
+  "homepage": "https://github.com/alakoko/alakoko.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.5"
   }
 }
