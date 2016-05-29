@@ -1,6 +1,6 @@
 (function($){
 	// tab menu 함수
-	$('#project, #example, #career').hide();
+	$('#career, #report, #example').hide();
 	$('.tab li').click(function  () {
 		var activeTab = $(this).attr("rel");
 		console.log("activeTab:"+activeTab);
