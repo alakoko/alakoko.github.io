@@ -84,23 +84,26 @@ a {
 
 header{
 	width: 960px;
-	overflow: hidden;
 	margin: 0 auto;
 	padding-top: 2%;
 	margin-bottom: 2.5%;
 }
+
+header .header_wrap{
+	width: 960px;
+}
 .logo{
-	font-size: 1.5em;
-	font-family: 'Righteous', cursive;
+	float:left;
 	width: 80px;
 	height: 80px;
+	border-radius: 40px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
-	border-radius: 40px;
 	background: #3E3828;
 	text-align: center;
 	line-height: 80px;
-	float:left;
+	font-size: 1.5em;
+	font-family: 'Righteous', cursive;
 }
 .logo>a{
 	color: white;
