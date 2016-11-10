@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>to do list | project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/349f414ee8.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="todolist-wrap">
+    <h1>TO DO List</h1>
+    <div class="add-list">
+      <input type="text" class="insert-box">
+      <button><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
+    </div>
+    <ul class="toDoList">
+
+    </ul>
+  </div>
+  <script>
+  $(function(){
+    $('button').on('click', function(){
+      var thing_to_do = $('.insert-box').val();
+      $('.toDoList').append('<li><input type="checkbox"><span class="thing-to-do">'+thing_to_do+'</span></li>');
+      $('.insert-box').val('');
+    });
+
+    $( 'input[type=checkbox]' ).on( 'click', function(){
+      console.log('hi!');
+    });
+  });
+  </script>
+</body>
+</html>
