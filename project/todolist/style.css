@@ -5,3 +5,5 @@ h1{text-align: center;}
 
 ul, li{list-style: none;}
 ul{padding-left:20px; }
+
+.thing-to-do.checked{text-decoration: line-through;}

@@ -21,17 +21,22 @@
     </ul>
   </div>
   <script>
-  $(function(){
+  $(document).ready(function(){
     $('button').on('click', function(){
       var thing_to_do = $('.insert-box').val();
       $('.toDoList').append('<li><input type="checkbox"><span class="thing-to-do">'+thing_to_do+'</span></li>');
       $('.insert-box').val('');
     });
 
-    $( 'input[type=checkbox]' ).on( 'click', function(){
-      console.log('hi!');
+    $('li input[type="checkbox"]').prop('checked', function(){
+      console.log('--');
+      $('.thing-to-do').addClass('checked');
     });
+
+
   });
+
+
   </script>
 </body>
 </html>
