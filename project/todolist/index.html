@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,27 +16,39 @@
       <input type="text" class="insert-box">
       <button><i class="fa fa-plus fa-2x" aria-hidden="true"></i></button>
     </div>
-    <ul class="toDoList">
-
-    </ul>
+    <ul class="toDoList"></ul>
   </div>
   <script>
   $(document).ready(function(){
     $('button').on('click', function(){
       var thing_to_do = $('.insert-box').val();
-      $('.toDoList').append('<li><input type="checkbox"><span class="thing-to-do">'+thing_to_do+'</span></li>');
-      $('.insert-box').val('');
+      var todotCount = $('.toDoList li').length;
+
+      if(thing_to_do.length>0){
+        todotCount = todotCount+1;
+
+        $('.toDoList').append('<li><input type="checkbox" id="todocheck'+todotCount+'" class="check-box"><label name="todocheck" for="todocheck'+todotCount+'" class="thing-to-do">'+thing_to_do+'</label></li>');
+        $('.insert-box').val('');
+      }else{
+        alert('할 일을 적어주세요!');
+      }
     });
 
-    $('li input[type="checkbox"]').prop('checked', function(){
-      console.log('--');
-      $('.thing-to-do').addClass('checked');
+    /*var checkAction = function(){
+      console.log('checked');
+      $('.thing-to-do').toggleClass('checked');
+    }*/
+
+    $('.check-box').on('click', function(){
+      console.log('dddddddddd');
     });
 
+    /*$('.check-box').prop('checked', function(){
+      console.log('checked');
+      $('.thing-to-do').toggleClass('checked');
+    });*/
 
   });
-
-
   </script>
 </body>
 </html>
