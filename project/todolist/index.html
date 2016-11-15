@@ -29,24 +29,22 @@
 
         $('.toDoList').append('<li><input type="checkbox" id="todocheck'+todotCount+'" class="check-box"><label name="todocheck" for="todocheck'+todotCount+'" class="thing-to-do">'+thing_to_do+'</label></li>');
         $('.insert-box').val('');
+
+        checkAction();
       }else{
         alert('할 일을 적어주세요!');
       }
     });
 
-    /*var checkAction = function(){
-      console.log('checked');
-      $('.thing-to-do').toggleClass('checked');
-    }*/
-
-    $('.check-box').on('click', function(){
-      console.log('dddddddddd');
-    });
-
-    /*$('.check-box').prop('checked', function(){
-      console.log('checked');
-      $('.thing-to-do').toggleClass('checked');
-    });*/
+    function checkAction(){
+      $('.check-box').on('click', function(){
+        console.log('dddddddddd');
+        $('.check-box').prop('checked', function(){
+          console.log('checked');
+          $('.thing-to-do').toggleClass('checked');
+        });
+      });
+    }
 
   });
   </script>
