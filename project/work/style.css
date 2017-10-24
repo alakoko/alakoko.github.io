@@ -1,0 +1,3 @@
+/* IR hidden or blind */
+.hidden {position：absolute; left:-10000px; top:auto; height:1px; overflow:hidden; } 
+.hidden {display: block; width: 0; text-indent: -9000px; overflow: hidden;} 
