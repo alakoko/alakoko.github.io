@@ -66,6 +66,17 @@ position: relative;
 	background: #D9D0C9;
 	color: #3E3827;
 }
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel .desc>a{
+	color: #3E3827;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel .desc{
+ padding-top:10px;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel .desc>a{
+	color:#ffffff;
+}
 
 /*.cbp_tmtimeline > li .cbp_tmlabel h2 { 
 	margin-top: 0px;
@@ -162,6 +173,7 @@ position: relative;
 		border-bottom-color: #9E9085;
 		top: -20px;
 	}
+
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;

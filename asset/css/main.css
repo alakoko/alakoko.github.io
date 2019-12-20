@@ -4,10 +4,11 @@
 .main{
 	width: 100%;
 	overflow: hidden;
-	min-height: 100%;
+	min-height: calc(100vh - 90px);
 	background-image: url('../images/home2_m.jpg');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
+	background-position: bottom;
 	padding-top: 6px;
 }
 .banner{
