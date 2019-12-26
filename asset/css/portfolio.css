@@ -63,7 +63,7 @@
 /* content common */
 #content{
 	clear: both;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 	overflow: hidden;
 	width: 960px;
 }
@@ -99,10 +99,10 @@ section > .description > span{
 	font-family: 'Open Sans', sans-serif;
 }
 section > .description > p{
+	display: block;
 	margin-top: 20px;
 	text-align:left;
-	font-size: 1.2em;
-	display: block;
+	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
 }
 

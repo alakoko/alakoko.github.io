@@ -67,8 +67,7 @@ body{
 }*/
 .sub{
 	overflow: hidden;
-	min-height: 100%;	
-	padding-bottom:40px; 
+	min-height: calc(100vh - 90px);	
 	background-color: #FEFFF8;
 }
 /* header */
@@ -128,6 +127,10 @@ header .header_wrap{
 }
 .gnb>li:hover {
 	background: #DDDDD6;
+}
+
+#content{
+	margin-bottom:80px;
 }
 
 /* footer */
