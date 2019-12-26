@@ -48,6 +48,7 @@
 	text-transform: uppercase;
 	font-family: 'Ubuntu', sans-serif;
 	margin-right: 1px;
+	cursor:pointer;
 }
 .banner > .tab > .on{
 	
@@ -159,8 +160,7 @@ section > .submenu{
 
 .report_list > li > .detail {
 	overflow: hidden;
-	padding:10px 15px 0px 15px;
-	width: 189px;
+	padding:10px;
 	height: 50px;
 	/*background-color: #D9D0C9;*/
 	background-color: #E8E8E4;
@@ -175,12 +175,14 @@ section > .submenu{
 	display: block;
 	float: left;
 	position: relative;
-	width: 80px;
+	width: 84px;
 	padding: 3px;
+	margin-top: 4px;
 	text-align: center;
 	background-color: #9E9084;
 	font-size: 1em;
 	color:#FFFFFF;
+	letter-spacing: -1px;
 }
 .report_list > li > .detail > a+a{
 	margin-left: 10px;
