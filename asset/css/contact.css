@@ -24,9 +24,14 @@
 	clear: both;
 	width:960px;
 	margin: 35px auto 35px auto;
-	overflow: hidden;
 	font-family: 'Lato', sans-serif;
 	/*border:1px solid black;*/
+}
+#content::after{
+	content:'';
+	display: table;
+	width: 100%;
+	clear:both
 }
 .contact_box{
 	float:left;
@@ -61,18 +66,18 @@
 	height: 25px;
 	color: #3D3727;
 	text-align: center;
+	font-size: 16px;
 }
 .list_contact > li span{
 	font-size: 1.3em;
 }
 .follow_link{
 	overflow:hidden;
-	position: relative;
-	top:63px;
+	margin-top:58px;
 }
 .follow_link>li{
 	float: left;
-	margin: 0 20px 15px 0;
+	margin-right:20px;
 }
 .follow_link>li>a>.fa{
 	display: inline-block;
