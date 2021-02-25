@@ -10,6 +10,7 @@
 	background-size: 100% auto;
 	background-position: bottom;
 	padding-top: 6px;
+	background-color: #F9F9F9;
 }
 .banner{
 	clear: both;
@@ -19,10 +20,11 @@
 .banner>p{
 	position: relative;
 	height: 500px;
+	padding-top: 40px;
 	font-size: 9em;
 	letter-spacing: -2px;
 	color: #A4A39F;
-	border: 1px solid white;
+	/* border: 1px solid white; */
 	font-family: 'Walter Turncoat', cursive;
 }
 .banner>.button{

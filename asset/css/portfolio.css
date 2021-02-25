@@ -33,7 +33,7 @@
 	display: block;
 	float:left;
 	position: relative;
-	left: 415px;
+	left: 560px;
 	width: 130px;
 	height: 30px;
 	text-align: center;
@@ -104,6 +104,11 @@ section > .description > p{
 	text-align:left;
 	font-size: 13px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+section > .description .career-desc{
+	text-align: left;
+    font-size: 1.2em;
 }
 
 section > .submenu{
@@ -230,6 +235,7 @@ section > .submenu{
 	display: inline-block;
 	width: 10px;
 	height: 10px;
+	margin-top: -4px;
 	margin-right: 30px;
 	background: #d4d3d0;
 	border-radius: 50%;
@@ -249,20 +255,20 @@ section > .submenu{
 }
 
 .portfolio-pagenation [role=button].on {
-	background: #ff7500;
 	width: 15px;
 	height: 15px;
+	background: #ff7500;
 	transform: translate(25%, 25%);
 }
 .portfolio-container{
 	position: relative;
 	left: 24px;
 	float: left;
-	overflow: hidden;
 	display: block;
 	width: 552px;
 	height: 312	px;
 	margin: 24px auto;
+	overflow: hidden;
 }
 
 .portfolio-list.anim {
@@ -277,11 +283,11 @@ section > .submenu{
 }
 
 .portfolio-item img {
+	top: 0;
+	left: 0;
 	z-index: -10;
 	width: 552px;
 	min-height: 311px;
-	top: 0;
-	left: 0;
 	height: auto;
 }
 
