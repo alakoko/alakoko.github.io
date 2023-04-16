@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/alakoko/alakoko.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.29.1",
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11"
   }
